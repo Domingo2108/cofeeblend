@@ -1,0 +1,4 @@
+1) choose your color - pick a theme 
+2) GIVE CONSISTENT SPACING
+3) avoid giving heights - except logos and 
+4) everything should be inside a div 

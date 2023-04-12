@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 350px;
+            height: 350px;
+            background-color: salmon;
+            background-image: url(Images/WhatsApp\ Image\ 2023-02-24\ at\ 11.41.57.jpg);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            margin-left: 50px;
+            color: white;
+            
+            animation-name: box_move;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-duration: 8s;
+            animation-direction: alternate;
+
+        }
+        .bg-std{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        @keyframes box_move{
+            0%{
+                transform: translate(0,0) rotate(0);
+                background-color: blue;
+            }
+            25%{
+                transform: translate(200px,0) rotate(360deg);
+                background-color: lightblue;
+            }
+            50%{
+                transform: translate(200px,200px) rotate(720deg);
+                background-color: lightskyblue;
+            }
+            75%{
+                transform: translate(0px,200px) rotate(360deg);
+                background-color: lightslategray;
+            }
+            100%{
+                transform: translate(0,0) rotate(0deg);
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box bg-std">khanu sanu</div>
+</body>
+</html>
